@@ -1,5 +1,8 @@
 
 import re
+import fileinput
+import csv
+import sys
 
 def process(lines):
     commitid = None
@@ -36,3 +39,11 @@ def process(lines):
     if id:
         result.append([commitid, author, date, id, committype])
     return result
+
+
+if __name__ == '__main__':
+    results = process(fileinput.input())
+    output = csv.writer(sys.stdout, dialect='excel')
+    for line in results:
+        output.writerow(line)
+    sys.stdout.flush()

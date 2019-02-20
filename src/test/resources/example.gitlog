@@ -1,0 +1,109 @@
+commit 6127f18c9333976045e8d34147298cf2f1c69b9d
+Author: 1UWJ+OEWWUMeE9N6EaMIlS+hA2hlRHKKRikU61D6wIk=
+Date:   2013-11-08
+
+    #2546 No code changes, only properties
+
+    Change-Id: Ibd385c61786fd6343c5be56317599fb37e769bfc
+
+ version.properties | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 44f6d241444bfbfaf873f61cf1d16b2927e90469
+Author: 1UWJ+OEWWUMeE9N6EaMIlS+hA2hlRHKKRikU61D6wIk=
+Date:   2013-11-04
+
+    #2545 Some change with prod code and unit tests
+
+    Change-Id: I5ccdab6126e9806460ebbbaf5fe0047841d85c45
+
+ foo/src/main/java/com/iKPF4i5CfCZkY021svVy7E0Cv1VprSG3mdSuNzr1fvk=        | 13 +++++++++++--
+ foo/src/main/java/com/nVcTNhlQeCKNr+Cuvw8YPoOP4qdfjJqZXFQyTRa/uJ8= | 56 +++++++++++++++++++++++++++++++-------------------------
+ foo/src/test/java/com/rHU7d4mv/Yn0EN2762q2tg/PnkxzZQmwpPl4xSiRn8I= | 53 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 95 insertions(+), 27 deletions(-)
+
+commit 8535ab8a52c05dbe35d0aaaafd53bfb0952425eb
+Author: uu/If+0kMP8/0+cb8jXebB+NXOL5fSGbXU4ph2tZxK0=
+Date:   2013-10-31
+
+    #2937 Some change with conflicting files
+
+    Change-Id: I1e869a08ef79d4f0767b0e350cea1d730a781970
+    Reviewed-on: https://gerrit.some.company.url/gerrit/31314
+    Tested-by: uI8FgnCSeEegsHHmF0GoCOBaDrPn/sK0yQGOOF6dfEY=
+    Reviewed-by: uI8FgnCSeEegsHHmF0GoCOBaDrPn/sK0yQGOOF6dfEY=
+
+    Conflicts:
+    	foo/src/main/java/com/oXH+QXklxo4jeet2nHz8CSPmGltXY/uIG3/8yUT0Iec=
+
+ foo/src/main/java/com/oXH+QXklxo4jeet2nHz8CSPmGltXY/uIG3/8yUT0Iec=                         | 3 ++-
+ foo/src/main/java/com/4/t2L+dcfCQr1fb6zKv1Goeq/P6ZX3U9eFn6IxSuJ/0=          | 2 +-
+ foo/src/test/java/com/sn407GQL0+hlKRZKrp+KJXAOz80JAjIlYdfBnoYVRrE= | 2 +-
+ 3 files changed, 4 insertions(+), 3 deletions(-)
+
+commit 5f9527629db9cfaf46c5c7bd7e29c7790be4fe4d
+Author: WEtBn8R4TsZQdQGivJ4fLwjsyLV8+n6CorWyL8n806M=
+Date:   2013-10-29
+
+    #2530 Some change with integration test cases
+
+    Conflicts:
+    	foo-bt/tests/automatic/other/tc_some_business_use_case.xml
+
+    Change-Id: I6eaa275c0afa8e89f10acba5d9dbe23ff62c952f
+
+ foo-bt/tests/automatic/other/tc_some_business_use_case.xml | 118 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++S+---------------------------------------------------------
+ 1 file changed, 61 insertions(+), 57 deletions(-)
+
+commit 4cbd564cd77c0aa78f7612954e2de3272fda03cd
+Author: 91/2QjerJBSNVD5oZgFIcLehP83c6p68MvDaUnex08I=
+Date:   2013-10-30
+
+    Revert "#2530 Some change that should not have been made"
+
+    This reverts commit 6b8d92bf3d5e7b3efc948ef3b6b32e2637a37b10.
+
+    Conflicts:
+    	foo/src/main/java/com/PJdkjxx0l9O58ZSCmqJtaUqkPlZQT7qEWatEibZyZ8s=
+
+    Change-Id: Iad4bef5624b3d9d6b631b2777316da11b5974ae3
+
+ foo-bt/tests/automatic/operations/tc_some_other_use_case.xml | 20 --------------------
+ 1 file changed, 20 deletions(-)
+
+commit 6b41ee82a4554fce5dea139c636638961598c924
+Author: i7xhV3TVgOiWOI8hlBy52ddtwYnjuNcN714iy99aLcs=
+Date:   2013-10-28
+
+    #2530 A complex change involving prod, unit tests, and integration tests
+
+    Conflicts:
+    	foo-bt/tests/automatic/other/TC_some_use_case_in_caps.xml
+    	foo/src/main/java/com/PJdkjxx0l9O58ZSCmqJtaUqkPlZQT7qEWatEibZyZ8s=
+    	foo/src/test/java/com/JE79riF9nKAxv6y5NBIM7fWrKW7DOcC60/XYeFb3hq8=
+
+    Change-Id: I0df894e61c5b6b1d7b437e7e88640afde7874ecb
+
+ foo-bt/tests/automatic/other/TC_some_use_case_in_caps.xml          | 38 +++++++++++++++++++-------------------
+ foo/src/main/java/com/PJdkjxx0l9O58ZSCmqJtaUqkPlZQT7qEWatEibZyZ8s=                         |  9 ++++-----
+ foo/src/test/java/com/JE79riF9nKAxv6y5NBIM7fWrKW7DOcC60/XYeFb3hq8= | 72 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 95 insertions(+), 24 deletions(-)
+
+commit 9a51a51cd105fc21319d3492649615f3cbb6c713
+Author: WEtBn8R4TsZQdQGivJ4fLwjsyLV8+n6CorWyL8n806M=
+Date:   2013-10-29
+
+    #2530 A change with a renamed file
+
+ foo-bt/tests/automatic/other/{tc_some_file_with_a_bad_name.xml => mN+mW75uVE3oW9YoTY3o3vRHgj3KHlc5jCSOX5t1abg= | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 50c6eaab55258afe56b1d97ec2f5f02ca7ecebe0
+Author: 91/2QjerJBSNVD5oZgFIcLehP83c6p68MvDaUnex08I=
+Date:   2013-10-29
+
+    #2681 Some change with gui properties only.
+
+ web-gui/src/main/resources/language_default.properties | 5 +++++
+ 1 file changed, 5 insertions(+)
+
